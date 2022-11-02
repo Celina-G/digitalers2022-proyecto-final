@@ -1,0 +1,7 @@
+package com.educacionit.digitalers.servicios;
+
+import com.educacionit.digitalers.interfaces.ServicioGenerico;
+
+public class UsuarioServicio implements ServicioGenerico<V, K> {
+
+}

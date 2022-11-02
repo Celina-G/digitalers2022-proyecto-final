@@ -1,0 +1,9 @@
+127.0.0.1 - - [01/Nov/2022:21:14:20 -0300] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:14:21 -0300] "GET /backend/WEB-INF/classes/com/educacionit/digitalers/servicios/MiPrimerServicio.java HTTP/1.1" 404 611
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:14:21 -0300] "GET /favicon.ico HTTP/1.1" 404 699
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:15:09 -0300] "GET /backend/blog/MiPrimerServicio HTTP/1.1" 404 642
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:15:20 -0300] "GET /backend/blog/MiPrimerServicio/saludo1 HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:25:10 -0300] "GET /backend/blog/MiPrimerServicio/saludo1 HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:33:16 -0300] "GET /backend/blog/MiPrimerServicio/saludo2 HTTP/1.1" 203 10
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:38:19 -0300] "GET /backend/blog/MiPrimerServicio/saludo3 HTTP/1.1" 200 19
+0:0:0:0:0:0:0:1 - - [01/Nov/2022:21:39:10 -0300] "GET /backend/blog/MiPrimerServicio/saludo3 HTTP/1.1" 200 19

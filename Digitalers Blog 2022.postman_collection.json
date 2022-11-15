@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "1cab62f5-fb66-43fc-a456-b2630acb1d6b",
+		"name": "Digitalers Blog 2022-mine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24193722"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Find by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_DESA}}/users/findByID/2",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"users",
+								"findByID",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_DESA}}/users/findAll",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"users",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"key\": \"234567\",\r\n    \"active\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_DESA}}/users/update",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "credential",
+								"value": "{{UUID_DESA}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user4@gmail.com\",\r\n    \"key\": \"12t34\",\r\n    \"active\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_DESA}}/users/insert",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"users",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Sign in",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var res = JSON.parse(responseBody);\r",
+									"pm.collectionVariables.set(\"UUID_DESA\",res.uuid);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"key\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_DESA}}/login/signIn",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"login",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publications",
+			"item": [
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_DESA}}/publications/findAll",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"publications",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_DESA}}/publications/findByUserID/2",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"publications",
+								"findByUserID",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_DESA}}/publications/findByID/1",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"publications",
+								"findByID",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "credential",
+								"value": "{{UUID_DESA}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"title\": \"Publicacion 9\",\r\n        \"body\": \"Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_DESA}}/publications/insert",
+							"host": [
+								"{{URL_DESA}}"
+							],
+							"path": [
+								"publications",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_DESA",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "UUID_DESA",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

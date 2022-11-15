@@ -1,0 +1,8 @@
+body{
+    background: #6d54da;                    
+    background: linear-gradient(to right, #29188c, #c7a1f5);
+}
+.bg{
+     background-image: url(../images/planner.jpg);
+     background-position: center center;
+}

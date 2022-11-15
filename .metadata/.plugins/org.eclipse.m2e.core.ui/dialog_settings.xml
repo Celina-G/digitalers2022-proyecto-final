@@ -27,13 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.educacionit.digitalers.Spring"/>
+			<item value="com.educacionit.digitalers.spring"/>
 		</list>
 		<list key="groupId">
 			<item value="com.educacionit.digitalers"/>
 		</list>
 		<list key="artifactId">
-			<item value="Spring"/>
+			<item value="spring"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

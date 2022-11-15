@@ -7,6 +7,7 @@ doctypeExtrenalSysref=\#DFBE95 | null | null | null | null | null
 doctypeName=\#DFBE95 | null | null | null | null | null
 eclipse.preferences.version=1
 entityReference=\#8DCBE2 | null | null | null | null | null
+newFileTemplateName=New HTML File (5)
 overriddenByCSS=,commentBorder,commentText,declBoder,doctypeExternalId,doctypeExternalPubref,doctypeExtrenalSysref,doctypeName,entityReference,tagAttributeEquals,tagAttributeName,tagAttributeValue,tagBorder,tagName,xmlContent,
 tagAttributeEquals=\#E2E2E2 | null | null | null | null | null
 tagAttributeName=\#B3B784 | null | null | null | null | null

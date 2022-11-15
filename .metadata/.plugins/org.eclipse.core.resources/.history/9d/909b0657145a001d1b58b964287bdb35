@@ -1,5 +1,0 @@
-package com.educacionit.digitalers.configuraciones;
-
-public @interface ArtifactPath {
-
-}
